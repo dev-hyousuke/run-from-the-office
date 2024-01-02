@@ -12,7 +12,7 @@ int main()
 {
     GameManager gameManager;
     UIManager uiManager;
-    Timer timer{15};
+    Timer timer{30};
     Map map;
     Player player{gameManager.GetWindowWidth(), gameManager.GetWindowHeight()};
     Button button{ Vector2{3640, 1700}, 50, 50 };

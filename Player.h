@@ -39,7 +39,7 @@ class Player
         int frame{};
         int maxframes{6};
         float updateTime{1.f / 6.f};
-        float speed{12.f};
+        float speed{5.f};
         float width{};
         float height{};
         float scale{5.f};
