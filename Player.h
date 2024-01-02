@@ -20,8 +20,8 @@ class Player
         Rectangle GetCollisionRectangle();
         void Tick(float deltaTime);
         void UndoMoviment();
-        Texture2D GetTextureForDirectionAndMovement(Direction direction, bool isMoving, Texture2D defaultTexture);
     private:
+        Texture2D GetTextureForDirectionAndMovement(Direction direction, bool isMoving, Texture2D defaultTexture);
         Texture2D texture{LoadTexture("characters/Adam_idle_front_anim_16x16.png")};
         Texture2D idleFront{LoadTexture("characters/Adam_idle_front_anim_16x16.png")};
         Texture2D idleBack{LoadTexture("characters/Adam_idle_anim_back_16x16.png")};
@@ -39,7 +39,7 @@ class Player
         int frame{};
         int maxframes{6};
         float updateTime{1.f / 6.f};
-        float speed{5.f};
+        float speed{12.f};
         float width{};
         float height{};
         float scale{5.f};

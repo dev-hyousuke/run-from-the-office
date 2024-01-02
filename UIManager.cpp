@@ -29,3 +29,22 @@ void UIManager::DrawGameOver(int windowWidth, int windowHeight)
 
     DrawText(message, textX, textY, fontSize, RED);
 }
+
+void UIManager::DrawWinGame(int windowWidth, int windowHeight)
+{
+    const char* message = "Win!";
+    int fontSize = 100;
+    int textWidth = MeasureText(message, fontSize);
+    int textHeight = fontSize;
+
+    int textX = (windowWidth - textWidth) / 2; 
+    int textY = (windowHeight - textHeight) / 2;
+
+    int borderWidth = 2;
+    DrawText(message, textX - borderWidth, textY - borderWidth, fontSize, BLACK);
+    DrawText(message, textX + borderWidth, textY - borderWidth, fontSize, BLACK);
+    DrawText(message, textX - borderWidth, textY + borderWidth, fontSize, BLACK);
+    DrawText(message, textX + borderWidth, textY + borderWidth, fontSize, BLACK);
+
+    DrawText(message, textX, textY, fontSize, GREEN);
+}
